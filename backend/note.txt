@@ -1,0 +1,15 @@
+//endpoint
+
+app.get("/",(req, res)=>{
+    res.send("<h1>Hello world!</h1>")
+})
+
+app.get("/api/user",(req, res)=>{
+    res.json({
+        msg:"users api"
+    })
+})
+
+app.get("/api/products",(req, res)=>{
+    res.send("List of products")
+})
